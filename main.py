@@ -9,9 +9,12 @@ def check_if_symmetric(string):
     return False
 
 
-
-
-word = "easy"
-x = list(word)
-y= len(x)
-print(x)
+word = "abcd"
+word = list(word)
+y= len(word)
+z = word.index
+for h in word:
+    if h == "a":
+      i = word.index("a")
+    word = word[:i]+['1']+word[i+1:]
+print(word)
