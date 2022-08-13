@@ -58,8 +58,8 @@ def convert_to_numbers(string):
     if h == "n":
       i = word.index("n")
       word = word[:i]+['14']+word[i+1:]
-    if h == "O":
-      i = word.index("O")
+    if h == "o":
+      i = word.index("o")
       word = word[:i]+['15']+word[i+1:]
     if h == "p":
       i = word.index("p")
@@ -82,5 +82,17 @@ def convert_to_numbers(string):
     if h == "v":
       i = word.index("v")
       word = word[:i]+['22']+word[i+1:]
+    if h == "w":
+      i = word.index("w")
+      word = word[:i]+['23']+word[i+1:]
+    if h == "x":
+      i = word.index("x")
+      word = word[:i]+['24']+word[i+1:]
+    if h == "y":
+      i = word.index("y")
+      word = word[:i]+['25']+word[i+1:]
+    if h == "z":
+      i = word.index("z")
+      word = word[:i]+['26']+word[i+1:]
   print(word)
 convert_to_numbers("a b c d e f g h i j k l m n o p q r s t u v w x y z")
