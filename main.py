@@ -8,5 +8,10 @@ def check_if_symmetric(string):
   if t1 != s2:
     return False
 
-def convert_to_numbers(string):
-  
+
+
+
+word = "easy"
+x = list(word)
+y= len(x)
+print(x)
