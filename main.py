@@ -1,100 +1,20 @@
 def check_if_symmetric(string):
-  s = string
-  t1 = s[::-1]
-  if t1 == s:
-    print("true")
-    return True
-  else:
-    print("false")
-    return False
+  reverse = string[::-1]
+  return reverse == string
 
-def convert_to_numbers(string):
-  word = string
+print(check_if_symmetric("ew"))
+def convert_to_numbers(word):
   word = list(word)
+  d = {
+      " ": 0, "a": 1, "b": 2, "c": 3, "d": 4, "e": 5,   "f": 6, "g": 7, "h": 8, "i": 9, "j": 10, "k": 11, "k": 12, "m": 13, "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "x": 19, "t": 20, "u": 21, "v": 22, "w": 23, "x": 24, "y": 25, "z": 26
+  }
+  numbers = []
   for h in word:
-    if h == " ":
-      i = word.index(" ")
-      word = word[:i]+['0']+word[i+1:]
-    if h == "a":
-      i = word.index("a")
-      word = word[:i]+['1']+word[i+1:]
-    if h == "b":
-      i = word.index("b")
-      word = word[:i]+['2']+word[i+1:]
-    if h == "c":
-      i = word.index("c")
-      word = word[:i]+['3']+word[i+1:]
-    if h == "d":
-      i = word.index("d")
-      word = word[:i]+['4']+word[i+1:]
-    if h == "e":
-      i = word.index("e")
-      word = word[:i]+['5']+word[i+1:]
-    if h == "f":
-      i = word.index("f")
-      word = word[:i]+['6']+word[i+1:]
-    if h == "g":
-      i = word.index("g")
-      word = word[:i]+['7']+word[i+1:]
-    if h == "h":
-      i = word.index("h")
-      word = word[:i]+['8']+word[i+1:]
-    if h == "i":
-      i = word.index("i")
-      word = word[:i]+['9']+word[i+1:]
-    if h == "j":
-      i = word.index("j")
-      word = word[:i]+['10']+word[i+1:]
-    if h == "k":
-      i = word.index("k")
-      word = word[:i]+['11']+word[i+1:]
-    if h == "l":
-      i = word.index("l")
-      word = word[:i]+['12']+word[i+1:]
-    if h == "m":
-      i = word.index("m")
-      word = word[:i]+['13']+word[i+1:]
-    if h == "n":
-      i = word.index("n")
-      word = word[:i]+['14']+word[i+1:]
-    if h == "o":
-      i = word.index("o")
-      word = word[:i]+['15']+word[i+1:]
-    if h == "p":
-      i = word.index("p")
-      word = word[:i]+['16']+word[i+1:]
-    if h == "q":
-      i = word.index("q")
-      word = word[:i]+['17']+word[i+1:]
-    if h == "r":
-      i = word.index("r")
-      word = word[:i]+['18']+word[i+1:]
-    if h == "s":
-      i = word.index("s")
-      word = word[:i]+['19']+word[i+1:]
-    if h == "t":
-      i = word.index("t")
-      word = word[:i]+['20']+word[i+1:]
-    if h == "u":
-      i = word.index("u")
-      word = word[:i]+['21']+word[i+1:]
-    if h == "v":
-      i = word.index("v")
-      word = word[:i]+['22']+word[i+1:]
-    if h == "w":
-      i = word.index("w")
-      word = word[:i]+['23']+word[i+1:]
-    if h == "x":
-      i = word.index("x")
-      word = word[:i]+['24']+word[i+1:]
-    if h == "y":
-      i = word.index("y")
-      word = word[:i]+['25']+word[i+1:]
-    if h == "z":
-      i = word.index("z")
-      word = word[:i]+['26']+word[i+1:]
-  print(word)
-  
+    numbers.append(d[h])
+  print(numbers)
+  return word
+convert_to_numbers("a v c d e f")
+
 def convert_to_letters(array):
   word = array
   for h in word:
@@ -180,7 +100,6 @@ def convert_to_letters(array):
       i = word.index(26)
       word = word[:i]+['z']+word[i+1:]
   print(word)
-
+  return(word)
+convert_to_letters([1,0,3,1,20])
   
-
-convert_to_letters([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27])
