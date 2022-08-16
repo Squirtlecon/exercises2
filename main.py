@@ -26,3 +26,12 @@ def get_intersection(array1, array2):
     array3 = [value for value in array1 if value in array2]
     print(array3)
     return array3
+def get_union(array1, array2):
+  array3 = array1 +array2
+  final_list = []
+  for num in array3:
+        if num not in final_list:
+            final_list.append(num)
+  print(final_list)
+  return final_list
+get_union([1,2,3], [1,3,2,5,6])
