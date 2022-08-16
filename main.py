@@ -34,4 +34,18 @@ def get_union(array1, array2):
             final_list.append(num)
   print(final_list)
   return final_list
-get_union([1,2,3], [1,3,2,5,6])
+def count_characters(string):
+    string = string.lower()
+    d = {}
+    for n in string:
+        char = d.keys()
+        if n in char:
+            d[n] += 1
+        else:
+            d[n] = 1
+    return d
+def is_prime(N):
+  import math
+  x = math.floor(N/2)
+  if x==2 or x==3 or x==4 or x==5 or x==6 or x==7:
+    
