@@ -46,6 +46,15 @@ def count_characters(string):
     return d
 def is_prime(N):
   import math
-  x = math.floor(N/2)
-  if x==2 or x==3 or x==4 or x==5 or x==6 or x==7:
-    
+  half = math.floor(N/2)
+  for possible_divsor in range(2, half+1):
+    if N%possible_divsor==0:
+      print("false")
+      return False
+  print("true")
+  return True
+  
+def decimal_to_binary(string):
+  print(bin(string).replace("0b",""))
+
+binary_to_decimal(16)
