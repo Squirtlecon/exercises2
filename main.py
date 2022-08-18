@@ -53,8 +53,15 @@ def is_prime(N):
       return False
   print("true")
   return True
-  
-def decimal_to_binary(string):
-  print(bin(string).replace("0b",""))
 
-binary_to_decimal(16)
+def binary_to_decimal(string):
+  string = list(string)
+  n = len(string)
+  string = string[::-1]
+  print(string)
+  total = 0
+  for index in range(0, n+1):
+    index == #num
+  
+  
+binary_to_decimal('12345')
