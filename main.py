@@ -58,10 +58,25 @@ def binary_to_decimal(string):
   string = list(string)
   string = string[::-1]
   total = 0
-  for f in range(len(string)):
-    u = int(string[f])
-    z=u*2**f
-    total=total + z
+  for exponent in range(len(string)):
+    cofficent = int(string[exponent])
+    value=cofficent*2**exponent
+    total=total + value
   print(total)
   return total
-binary_to_decimal('1011')
+def hexadecimal_to_decimal(string):
+  string = list(string)
+  string = string[::-1]
+  total = 0
+  for exponent in range(len(string)):
+    cofficent = int(string[exponent])
+    value=cofficent*16**exponent
+    total=total + value
+  print(total)
+  return total
+def decimal_to_binary(string):
+  string = int(string)
+  if string >= 1:
+    decimal_to_binary(string // 2)
+    print(string % 2, end = '')
+decimal_to_binary('35')
