@@ -56,12 +56,12 @@ def is_prime(N):
 
 def binary_to_decimal(string):
   string = list(string)
-  n = len(string)
   string = string[::-1]
-  print(string)
   total = 0
-  for index in range(0, n+1):
-    index == #num
-  
-  
-binary_to_decimal('12345')
+  for f in range(len(string)):
+    u = int(string[f])
+    z=u*2**f
+    total=total + z
+  print(total)
+  return total
+binary_to_decimal('1011')
